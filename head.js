@@ -6,10 +6,11 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+//assertEqual("Lighthouse Labs", "Bootcamp");
+//assertEqual(1, 1);
 
 const head = function(firstItem) {
   return firstItem[0];
 };
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+
+//assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");

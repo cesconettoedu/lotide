@@ -19,6 +19,8 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3])
-assertArraysEqual([1, 2, 3], [1, 2, 4])
-assertArraysEqual([], [])
+
+// to test:
+// assertArraysEqual([1, 2, 3], [1, 2, 3])
+// assertArraysEqual([1, 2, 3], [1, 2, 4])
+// assertArraysEqual([], [])

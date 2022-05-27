@@ -32,4 +32,5 @@ const map = function(array, callback) {
 
 const results1 = map(words, word => word[0]);
 
-assertArraysEqual((results1), ['g', 'c', 't', 'm', 't']);
+assertArraysEqual((results1), ['g', 'c', 't', 'm', 't']); // dont put console.log call in node
+assertArraysEqual((results1), ['r', 'c', 't', 'm', 't']);

@@ -7,8 +7,8 @@
 // };
  
 const countLetters = (array1) => {
-  let arrayDiv = array1.replace(/\s/g, ''); // removi espaco
   let output = {};
+  let arrayDiv = array1.replace(/\s/g, ''); // removi espaco
   for (let value of arrayDiv) {
     //console.log(typeof value);
     if (value in output) {

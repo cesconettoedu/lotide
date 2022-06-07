@@ -14,19 +14,30 @@ const assertEqual = function(actual, expected) {
 };
   
   
-const findKeyByValue = function(show, searchFor) {
-  let output = '';
+// const findKeyByValue = function(show, searchFor) {
+//   let output = '';
   
-  Object.keys(show).forEach(function(key) {
-    if (show[key] !== searchFor) {
-      output = undefined;
-    } else {
-      output = key;
+//   Object.keys(show).forEach(function(key) {
+//     if (show[key] !== searchFor) {
+//       output = undefined;
+//     } else {
+//       output = key;
+//     }
+//   });
+//   return output;
+// };
+  
+
+const findKeyByValue = function(obj, value) {
+  for (const key in obj) {
+
+    if (value === obj[key]) {
+      return key;
     }
-  });
-  return output;
+  }
 };
-  
+
+
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
  

@@ -3,4 +3,4 @@ const head = function(firstItem) {
 };
 
 
-module.exports = head;
+module.exports = head; 

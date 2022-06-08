@@ -19,9 +19,6 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-
-const words = ["ground", "control", "to", "major", "tom"];
-
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -29,8 +26,3 @@ const map = function(array, callback) {
   }
   return results;
 };
-
-const results1 = map(words, word => word[0]);
-
-assertArraysEqual((results1), ['g', 'c', 't', 'm', 't']); // dont put console.log call in node
-assertArraysEqual((results1), ['r', 'c', 't', 'm', 't']);

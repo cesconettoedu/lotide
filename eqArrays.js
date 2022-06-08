@@ -11,4 +11,4 @@ const eqArrays = function(a1, a2) {
   return true;
 };
 
-module.exports = eqArrays; 
+module.exports = eqArrays;

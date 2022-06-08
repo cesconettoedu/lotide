@@ -10,13 +10,13 @@ const eqArrays = function(a1, a2) {
   return true;
 };
  
-const eqObjects = function(object1, object2) {  //when call eqObject , eqarray will be call autom.
-  if (Object.keys(object1).length !== Object.keys(object2).length) {  // check the size of objects are same
+const eqObjects = function(object1, object2) {  
+  if (Object.keys(object1).length !== Object.keys(object2).length) {  
     return false;
   }
   for (let value1 in object1) {
-    if (Array.isArray(object1[value1]) && Array.isArray(object2[value1]))  { // check if its a array
-      if (!eqArrays(object1[value1], object2[value1])) {  // eqarrays compare arrays
+    if (Array.isArray(object1[value1]) && Array.isArray(object2[value1]))  { 
+      if (!eqArrays(object1[value1], object2[value1])) {  
         return false;
       }
     } else {
@@ -37,19 +37,3 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
  
-// const ab = { a: "1", b: "2" };
-// const ba = { b: "2", a: "1" };
-// const vx = { b: "2", a: "1" };
-// const abc = { a: "1", b: "2", c: "3" };
-// assertObjectsEqual(vx, ba); // => true
-// assertObjectsEqual(ab, ba); // => true
-// assertObjectsEqual(ab, abc);// => false
- 
- 
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-// assertObjectsEqual(cd, dc); // => true
- 
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// assertObjectsEqual(cd, cd2); // => false
-

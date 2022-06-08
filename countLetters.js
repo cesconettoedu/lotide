@@ -12,5 +12,4 @@ const countLetters = (array1) => {
   return output;
 };
  
-
- 
+module.exports = countLetters;
